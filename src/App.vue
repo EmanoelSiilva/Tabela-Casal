@@ -19,7 +19,7 @@
   </table>
 
   <div>
-    <button>Play</button>
+    <button @click="handleClick()" >Play</button>
   </div>
 
       
@@ -29,6 +29,14 @@
 
 export default {
   name: 'App',
+  data() {
+
+  },
+  methods: {
+    handleClick() {
+      alert('Foi clicado')
+    }
+  }
 }
 </script>
 
